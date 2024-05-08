@@ -1,3 +1,0 @@
-/mnt/d/CodeSpace/linear_algebra/itebd/CMakeFiles/itebd.dir
-/mnt/d/CodeSpace/linear_algebra/itebd/CMakeFiles/edit_cache.dir
-/mnt/d/CodeSpace/linear_algebra/itebd/CMakeFiles/rebuild_cache.dir

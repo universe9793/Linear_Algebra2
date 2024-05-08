@@ -1,4 +1,0 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu-22.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/d/CodeSpace/linear_algebra/itebd && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G 'CodeBlocks - Unix Makefiles' -S /mnt/d/CodeSpace/linear_algebra/itebd -B /mnt/d/CodeSpace/linear_algebra/itebd; exitcode=$?; sleep 0.001; (exit $exitcode)"
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/d/CodeSpace/linear_algebra/itebd
