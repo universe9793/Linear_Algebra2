@@ -1,0 +1,48 @@
+\documentclass{uofa-eng-assignment}
+\usepackage{float}
+\usepackage{bm}
+\usepackage{ctex}
+\usepackage{xcolor}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage{mathrsfs}
+\usepackage{subfig}
+\usepackage{physics}
+\newcommand*{\name}{universe9793}
+\newcommand*{\id}{320200910461}
+\newcommand*{\course}{线性代数\uppercase\expandafter{\romannumeral2}}
+\newcommand*{\assignment}{入门张量网络方法}
+%\renewcommand{\familydefa\mathrm{U}lt}{\ttdefa\mathrm{U}lt}
+
+%\setCJKmainfont{思源黑体 CN Normal}
+\begin{document}
+\maketitle
+\begin{center}
+    \textbf{\Large 摘要}
+\end{center}
+    \qquad 这篇文章主要记录了入门学习张量网络的过程，主要的过程为:首先学习张量的一些基本知识，包括张量的矩阵化、张量的缩并、
+    张量的图形表示； 接下来学习了一些张量的分解过程，Tucker分解以及HOSVD分解，了解了一下什么是最优低秩近似， 并且在python
+    上写了一些简单代码进行了测试； 之后复习了一下Power Method，学习T-S分解；最后便是学习Matrix Product State,包括怎么
+    通过SVD分解构建MPS态，怎么对MPS进行正则化。在最后就是解决一些实际的问题：使用iTEBD(虚时演化，本质是Power Method)估算
+    一维无限长自旋1/2(1)反铁磁海森堡链的基态能量，学习怎么计算算符的期望值；求解二维方格子无限大自旋1/2(1)反铁磁海森堡模型
+    的基态能量；求解Kagome晶格无限大自旋1/2(1)反铁磁海森堡模型的基态能量。
+
+\section[Tensor]{张量基本知识}\label{sec:Tensor}
+    这一节主要记录学习到的张量基本知识。
+    \subsection[Tenser Size]{张量的一些概念}\label{subsec:Size}
+        \textbf{张量的概念}：最简单来讲，张量就是由多个指标所标记的一系列数;
+
+        \textbf{张量的阶数}：指标的个数；
+
+        \textbf{指标的维数}：每一个指标所能取到的值的个数；
+    
+        \textbf{张量元}：构成张量的数.
+    \subsection[Tensor Operator]{张量的基本操作}\label{subsec:operator}
+        常见的张量的操作有切片、变形、转置。
+
+        \textbf{切片}：
+
+
+
+
+\end{document}
