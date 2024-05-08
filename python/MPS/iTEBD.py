@@ -7,7 +7,6 @@ from scipy.linalg import expm
 这里可以将Theta的计算设置为一个类，但是只有两个不等价张量参与计算，所以就直接写了
 '''
 
-
 def creat_Ham(S):
     s_up = tc.tensor([0.0, 1.0, 0.0, 0.0], dtype=tc.float64).reshape(2, 2)
     s_dn = tc.tensor([0.0, 0.0, 1.0, 0.0], dtype=tc.float64).reshape(2, 2)
@@ -57,12 +56,6 @@ if __name__ == '__main__':
         Theta = tc.einsum('aid,dje->aije', Theta, Gamma[b])
         Theta = tc.einsum('aije,ee->aije', Theta, tc.diag(Lambda[b]))
         Theta = tc.einsum('aijy,ijcd->cady', Theta, U)
-
-        pp = Theta.norm()
-        Psi = tc.einsum('iajy,ijcd->cady', Theta, Ham.reshape(physics_dim, physics_dim,
-                                                              physics_dim, physics_dim))
-        Psi = tc.einsum('cady, cady-> ', Psi, Theta)
-        print("<Eg> = {:.10f}".format(((Psi / (pp.norm() ** 2)).numpy())))
 
         Theta = Theta.reshape(physics_dim * chi, physics_dim * chi)
         E[a] = -tc.log(Theta.norm() ** 2) / (2 * tao)
