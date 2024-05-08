@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="itebd"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\home\;CMake Files\..\..\..\..\..\home\libtorch\;CMake Files\..\..\..\..\..\home\libtorch\share\;CMake Files\..\..\..\..\..\home\libtorch\share\cmake\;CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Torch\;CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\;CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\public\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/CodeSpace/linear_algebra/itebd"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="itebd">
+				<Option output="/mnt/d/CodeSpace/linear_algebra/itebd/itebd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CodeSpace/linear_algebra/itebd"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add directory="/home/libtorch/include"/>
+					<Add directory="/home/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 itebd"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="itebd/fast">
+				<Option output="/mnt/d/CodeSpace/linear_algebra/itebd/itebd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/CodeSpace/linear_algebra/itebd"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_DISTRIBUTED"/>
+					<Add option="-DUSE_C10D_GLOO"/>
+					<Add option="-DUSE_RPC"/>
+					<Add option="-DUSE_TENSORPIPE"/>
+					<Add directory="/home/libtorch/include"/>
+					<Add directory="/home/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 itebd/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/CodeSpace/linear_algebra/itebd"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/CodeSpace/linear_algebra/itebd"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/CodeSpace/linear_algebra/itebd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/main.cpp">
+			<Option target="itebd"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Torch/TorchConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Torch/TorchConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/Caffe2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/public/mkl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/public/mkldnn.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/mnt/d/CodeSpace/linear_algebra/itebd/../../../../../home/libtorch/share/cmake/Caffe2/public/utils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\home\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
