@@ -1,6 +1,8 @@
 # Linear_Algebra2
 Linear_Algebra works
 
+这些程序是在学习多体数值计算的时候写的，参考赵老师的PPT以及一些论文
+
 前几章用了Eigen库，后面统一使用Pytorch和libtorch
 
 第二章：Givens矩阵和Householder矩阵；
