@@ -89,10 +89,3 @@ if __name__ == '__main__':
     plt.imshow(Ising_4.Lattice, cmap='binary')
     plt.axis('off')
     mc.show()
-
-    plt.figure(figsize=(12.4, 9.6))
-    plt.plot(Ising_4.Mag)
-    plt.plot(Ising_4.E)
-    plt.xlabel("MC_Steps")
-    plt.ylabel("Energy/Magnetization")
-    plt.show()
