@@ -64,8 +64,6 @@ class MarkovMCIsing:
             i, j = self.RandomPoint(), self.RandomPoint()
             if self.MetropolisAccessPossibility(i, j) > tc.rand(1).item():
                 self.Lattice[i, j] = -1 * self.Lattice[i, j]
-                self.AvgEnergy()
-                self.AvgMag()
             if self.IsPlot and (n % 278 == 1 or n == 0):
                 self.SaveImg(img_steps)
                 img_steps += 1
@@ -75,7 +73,7 @@ class MarkovMCIsing:
 
 
 if __name__ == '__main__':
-    Ising_4 = MarkovMCIsing(200, 1, 1.5, 1)
+    Ising_4 = MarkovMCIsing(200, 1, 1.5, 0)
 
     plt.figure(figsize=(12.4, 9.6))
     plt.imshow(Ising_4.Lattice, cmap='binary')
